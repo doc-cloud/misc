@@ -1,0 +1,50 @@
+
+=================================================================
+
+source build/envsetup.sh
+lunch
+make gptimage
+
+some error like below:
+
+[ 57% 17822/30807] Building with Jack: out/target/common/obj/JAVA_LIBRARIES/android-ex-camera2-utils_intermediates/classes.jack
+FAILED: /bin/bash -c "(rm -f out/target/common/obj/JAVA_LIBRARIES/android-ex-camera2-utils_intermediates/classes.jack ) && (rm -rf out/target/common/obj/JAVA_LIBRARIES/android-ex-camera2-utils_intermediates/jack-rsc ) && (mkdir -p out/target/common/obj/JAVA_LIBRARIES/android-ex-camera2-utils_intermediates/ ) && (mkdir -p out/target/common/obj/JAVA_LIBRARIES/android-ex-camera2-utils_intermediates/jack-rsc ) && (rm -f out/target/common/obj/JAVA_LIBRARIES/android-ex-camera2-utils_intermediates/jack-rsc/java-source-list ) && (touch out/target/common/obj/JAVA_LIBRARIES/android-ex-camera2-utils_intermediates/jack-rsc/java-source-list ) && (echo -n 'frameworks/ex/camera2/utils/src/com/android/ex/camera2/utils/Camera2CaptureCallbackForwarder.java frameworks/ex/camera2/utils/src/com/android/ex/camera2/utils/Camera2CaptureCallbackSplitter.java frameworks/ex/camera2/utils/src/com/android/ex/camera2/utils/Camera2RequestSettingsSet.java ' >> out/target/common/obj/JAVA_LIBRARIES/android-ex-camera2-utils_intermediates/jack-rsc/java-source-list ) && (if [ -d \"out/target/common/obj/JAVA_LIBRARIES/android-ex-camera2-utils_intermediates/src\" ]; then find out/target/common/obj/JAVA_LIBRARIES/android-ex-camera2-utils_intermediates/src -name '*.java' >> out/target/common/obj/JAVA_LIBRARIES/android-ex-camera2-utils_intermediates/jack-rsc/java-source-list; fi ) && (tr ' ' '\\n' < out/target/common/obj/JAVA_LIBRARIES/android-ex-camera2-utils_intermediates/jack-rsc/java-source-list | build/tools/normalize_path.py | sort -u > out/target/common/obj/JAVA_LIBRARIES/android-ex-camera2-utils_intermediates/jack-rsc/java-source-list-uniq ) && (if [ -s out/target/common/obj/JAVA_LIBRARIES/android-ex-camera2-utils_intermediates/jack-rsc/java-source-list-uniq ] ; then export tmpEcjArg=\"@out/target/common/obj/JAVA_LIBRARIES/android-ex-camera2-utils_intermediates/jack-rsc/java-source-list-uniq\"; else export tmpEcjArg=\"\"; fi;  JACK_VERSION=3.36.CANDIDATE out/host/linux-x86/bin/jack @build/core/jack-default.args --verbose error -g -D jack.java.source.version=1.8  --classpath out/target/common/obj/JAVA_LIBRARIES/android_stubs_current_intermediates/classes.jack:out/target/common/obj/JAVA_LIBRARIES/android_stubs_current_intermediates/classes.jack   -D jack.import.resource.policy=keep-first -D jack.import.type.policy=keep-first -D jack.android.min-api-level=24  --output-jack out/target/common/obj/JAVA_LIBRARIES/android-ex-camera2-utils_intermediates/classes.jack   \$tmpEcjArg || ( rm -f out/target/common/obj/JAVA_LIBRARIES/android-ex-camera2-utils_intermediates/classes.jack ; exit 41 ) ) && (rm -f out/target/common/obj/JAVA_LIBRARIES/android-ex-camera2-utils_intermediates/jack-rsc/java-source-list ) && (mv out/target/common/obj/JAVA_LIBRARIES/android-ex-camera2-utils_intermediates/jack-rsc/java-source-list-uniq out/target/common/obj/JAVA_LIBRARIES/android-ex-camera2-utils_intermediates/jack-rsc.java-source-list )"
+Communication error with Jack server (52). Try 'jack-diagnose'
+[ 57% 17822/30807] Building with Jack: out/target/common/obj/JAVA_LIBRARIES/android-support-v4-eclair_intermediates/classes.jack
+FAILED: /bin/bash -c "(rm -f out/target/common/obj/JAVA_LIBRARIES/android-support-v4-eclair_intermediates/classes.jack ) && (rm -rf out/target/common/obj/JAVA_LIBRARIES/android-support-v4-eclair_intermediates/jack-rsc ) && (mkdir -p out/target/common/obj/JAVA_LIBRARIES/android-support-v4-eclair_intermediates/ ) && (mkdir -p out/target/common/obj/JAVA_LIBRARIES/android-support-v4-eclair_intermediates/jack-rsc ) && (rm -f out/target/common/obj/JAVA_LIBRARIES/android-support-v4-eclair_intermediates/jack-rsc/java-source-list ) && (touch out/target/common/obj/JAVA_LIBRARIES/android-support-v4-eclair_intermediates/jack-rsc/java-source-list ) && (echo -n 'frameworks/support/v4/eclair/android/support/v4/app/ActivityCompatEclair.java frameworks/support/v4/eclair/android/support/v4/app/BaseFragmentActivityEclair.java frameworks/support/v4/eclair/android/support/v4/app/NotificationManagerCompatEclair.java frameworks/support/v4/eclair/android/support/v4/graphics/drawable/DrawableCompatEclair.java frameworks/support/v4/eclair/android/support/v4/graphics/drawable/DrawableWrapperEclair.java frameworks/support/v4/eclair/android/support/v4/view/KeyEventCompatEclair.java frameworks/support/v4/eclair/android/support/v4/view/MotionEventCompatEclair.java ' >> out/target/common/obj/JAVA_LIBRARIES/android-support-v4-eclair_intermediates/jack-rsc/java-source-list ) && (if [ -d \"out/target/common/obj/JAVA_LIBRARIES/android-support-v4-eclair_intermediates/src\" ]; then find out/target/common/obj/JAVA_LIBRARIES/android-support-v4-eclair_intermediates/src -name '*.java' >> out/target/common/obj/JAVA_LIBRARIES/android-support-v4-eclair_intermediates/jack-rsc/java-source-list; fi ) && (tr ' ' '\\n' < out/target/common/obj/JAVA_LIBRARIES/android-support-v4-eclair_intermediates/jack-rsc/java-source-list | build/tools/normalize_path.py | sort -u > out/target/common/obj/JAVA_LIBRARIES/android-support-v4-eclair_intermediates/jack-rsc/java-source-list-uniq ) && (if [ -s out/target/common/obj/JAVA_LIBRARIES/android-support-v4-eclair_intermediates/jack-rsc/java-source-list-uniq ] ; then export tmpEcjArg=\"@out/target/common/obj/JAVA_LIBRARIES/android-support-v4-eclair_intermediates/jack-rsc/java-source-list-uniq\"; else export tmpEcjArg=\"\"; fi;  JACK_VERSION=3.36.CANDIDATE out/host/linux-x86/bin/jack @build/core/jack-default.args --verbose error -g -D jack.java.source.version=1.7  --classpath out/target/common/obj/JAVA_LIBRARIES/sdk_v5_intermediates/classes.jack:out/target/common/obj/JAVA_LIBRARIES/sdk_v5_intermediates/classes.jack:out/target/common/obj/JAVA_LIBRARIES/android-support-v4-donut_intermediates/classes.jack --import out/target/common/obj/JAVA_LIBRARIES/android-support-v4-donut_intermediates/classes.jack  -D jack.import.resource.policy=keep-first -D jack.import.type.policy=keep-first -D jack.android.min-api-level=5  --output-jack out/target/common/obj/JAVA_LIBRARIES/android-support-v4-eclair_intermediates/classes.jack   \$tmpEcjArg || ( rm -f out/target/common/obj/JAVA_LIBRARIES/android-support-v4-eclair_intermediates/classes.jack ; exit 41 ) ) && (rm -f out/target/common/obj/JAVA_LIBRARIES/android-support-v4-eclair_intermediates/jack-rsc/java-source-list ) && (mv out/target/common/obj/JAVA_LIBRARIES/android-support-v4-eclair_intermediates/jack-rsc/java-source-list-uniq out/target/common/obj/JAVA_LIBRARIES/android-support-v4-eclair_intermediates/jack-rsc.java-source-list )"
+Communication error with Jack server (52). Try 'jack-diagnose'
+[ 57% 17822/30807] Building with Jack: out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/with-local/classes.dex
+FAILED: /bin/bash out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/with-local/classes.dex.rsp
+Communication error with Jack server (52). Try 'jack-diagnose'
+ninja: build stopped: subcommand failed.
+make: *** [ninja_wrapper] Error 1
+
+#### make failed to build some targets (02:22:45 (hh:mm:ss)) ####
+
+zichenqi@zichenqi-desktop:~/workspace/android-alpha$ 
+zichenqi@zichenqi-desktop:~/workspace/android-alpha$ 
+zichenqi@zichenqi-desktop:~/workspace/android-alpha$
+
+the error looks like android, jack-server, I encountered this error in "out of memory error" trap in an early time
+
+----------------------------------------------
+
+I attemped to ran these commands below to solve it, It just go die at second time
+
+export JACK_SERVER_VM_ARGUMENTS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4096m"
+out/host/linux-x86/bin/jack-admin kill-server
+out/host/linux-x86/bin/jack-admin start-server
+
+it was not work.
+
+-----------------------------------------------
+
+before compile,
+vi prebuilts/sdk/tools/jack-admin {
+-	JACK_SERVER_COMMAND="java -Djava.io.tmpdir=$TMPDIR $JACK_SERVER_VM_ARGUMENTS -cp $LAUNCHER_JAR $LAUNCHER_NAME"
++	JACK_SERVER_COMMAND="java -Djava.io.tmpdir=$TMPDIR $JACK_SERVER_VM_ARGUMENTS -Xmx4096m -cp $LAUNCHER_JAR $LAUNCHER_NAME"
+}
+
+it was not work as well.
+
+=====================================================

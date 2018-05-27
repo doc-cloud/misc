@@ -1,0 +1,59 @@
+
+===================================================
+
+An error occurs frequency, Mr. Ding help me on it. We solved it.
+
+the log is below:
+
+-------------------------------------------
+
+build/core/binary.mk:928: warning: overriding commands for target `out/target/product/edison/obj/STATIC_LIBRARIES/libv8_intermediates/src/base/atomicops_internals_x86_gcc.o'
+build/core/binary.mk:928: warning: ignoring old commands for target `out/target/product/edison/obj/STATIC_LIBRARIES/libv8_intermediates/src/base/atomicops_internals_x86_gcc.o'
+build/core/binary.mk:664: warning: overriding commands for target `out/host/linux-x86/gen/STATIC_LIBRARIES/libaapt2_intermediates/proto/frameworks/base/tools/aapt2/Format.pb.cc'
+build/core/binary.mk:664: warning: ignoring old commands for target `out/host/linux-x86/gen/STATIC_LIBRARIES/libaapt2_intermediates/proto/frameworks/base/tools/aapt2/Format.pb.cc'
+build/core/binary.mk:668: warning: overriding commands for target `out/host/linux-x86/gen/STATIC_LIBRARIES/libaapt2_intermediates/proto/frameworks/base/tools/aapt2/Format.pb.h'
+build/core/binary.mk:668: warning: ignoring old commands for target `out/host/linux-x86/gen/STATIC_LIBRARIES/libaapt2_intermediates/proto/frameworks/base/tools/aapt2/Format.pb.h'
+build/core/Makefile:34: warning: overriding commands for target `out/target/product/edison/system/etc/wifi/wpa_supplicant.conf'
+build/core/base_rules.mk:316: warning: ignoring old commands for target `out/target/product/edison/system/etc/wifi/wpa_supplicant.conf'
+Starting build with ninja
+ninja: Entering directory `.'
+ninja: error: 'out/target/product/edison/obj/SHARED_LIBRARIES/libmetrics_intermediates/export_includes', needed by 'out/target/product/edison/obj/EXECUTABLES/update_engine_intermediates/import_includes', missing and no known rule to make it
+make: *** [ninja_wrapper] Error 1
+
+#### make failed to build some targets (51 seconds) ####
+
+zichenqi@zichenqi-desktop:~/workspace/brillo-alpha$ 
+zichenqi@zichenqi-desktop:~/workspace/brillo-alpha$ make dist 2>&1 | tee build.log
+
+----------------------------------------------
+
+Ding asked me to compile brillo on single core, instead the option "-j16",
+     the error occurred once again.
+
+----------------------------------------------
+
+zichenqi@zichenqi-desktop:~/workspace/brillo-alpha/external/jacoco$ cd ../../
+zichenqi@zichenqi-desktop:~/workspace/brillo-alpha$ rgrep "libmetrics" ./ --include=Android.mk
+./system/update_engine/Android.mk:    libmetrics \
+		^Z
+		[1]+  Stopped                 rgrep "libmetrics" ./ --include=Android.mk
+zichenqi@zichenqi-desktop:~/workspace/brillo-alpha$ cd system/update_engine
+
+Ding searched sth on "b20" of a specific group, I am not sure what is going...
+
+After browsed some Makefiles, Ding told me that some libraries are lacked, it is the reason of failure.
+
+What cause this lack?
+After compare with his own brillo tree on another machine, the original error found.
+
+error on repo sync, the source code is not complete.
+
+repo init cause this incomplete.
+
+we reuse the repo init command to establish .repo
+
+and the repo init -g should not use whitespace, I updated it on doc-cloud/command, I should merge it more classical.
+
+That is all.
+
+============================================
