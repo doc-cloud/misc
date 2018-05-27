@@ -1,0 +1,15 @@
+after I run
+
+chmod o+w /usr
+
+for some convince of file copy.
+
+the virtualbox cannot invoke, error box said session...sth, and /usr permission problem.
+
+then I run
+
+chmod o-w /usr/
+
+the problem was gone.
+
+it may be a bug in virtualbox.

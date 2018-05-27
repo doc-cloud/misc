@@ -1,0 +1,18 @@
+
+==================================
+installation:
+-------------------------
+apt-get install okular
+
+==================================
+problem:
+-------------------------
+okular file.pdf &
+cannot open pdf file,
+
+solution:
+------------------------
+apt-get install kdelibs-bin kdelibs5-plugins kdelibs5-data
+
+=================================
+to support open files in tabs, settings -> config okular -> general -> program feature
