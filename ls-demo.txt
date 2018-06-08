@@ -1,0 +1,33 @@
+
+ls -ld /tmp /usr/bin/passwd
+drwxrwxrwt 16 root root 61440 Jun 20 18:46 tmp/
+-rwsr-xr-x  1 root root 47032 Jul 16  2015 usr/bin/passwd
+
+s in x permiss bit, called Set Uid,
+effective for binary file,
+performer need x permission,
+effective in in execute processing(run-time),
+performer will be the owner permission
+
+======================================================================
+set uid:
+
+for /usr/bin/passwd, root vs linkerist
+linkerist has x,
+root is the owner of passwd,
+linkerist will get root permission, in the execute processing for linkerist
+/etc/shadow can be modified by passwd
+
+[root@Linkerist-Lenovo-G500:19:25:13: / #] ls -l `which -a cat`
+-rwxr-xr-x 1 root root 47904 Jan 14  2015 /bin/cat
+
+[linkerist@Linkerist-Lenovo-G500:19:26:07: ~ $] cat /etc/shadow
+cat: /etc/shadow: Permission denied
+
+set uid is just for executable, not script, script call binary program internally.
+
+=========================================================================
+set gid
+
+for /usr/bin/locale,
+linkerist
