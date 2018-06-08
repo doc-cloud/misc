@@ -1,0 +1,5 @@
+
+when compile vim-7.2, no termcap.h found,
+
+apt-get install libncurse5-dev
+

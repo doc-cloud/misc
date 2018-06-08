@@ -1,0 +1,139 @@
+
+==================================================
+
+issue about apt-get, prepre...
+sudo apt-get install build-essential
+
+linkerist@linkerist-vay-nava:~$
+linkerist@linkerist-vay-nava:~$
+linkerist@linkerist-vay-nava:~$
+linkerist@linkerist-vay-nava:~$ sudo apt-get install build-essential 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may help to resolve the situation:
+
+The following packages have unmet dependencies:
+ build-essential : Depends: dpkg-dev (>= 1.13.5) but it is not going to be installed
+E: Unable to correct problems, you have held broken packages.
+linkerist@linkerist-vay-nava:~$
+
+linkerist@linkerist-vay-nava:~$ 
+linkerist@linkerist-vay-nava:~$
+linkerist@linkerist-vay-nava:~$
+linkerist@linkerist-vay-nava:~$
+linkerist@linkerist-vay-nava:~$
+linkerist@linkerist-vay-nava:~$
+linkerist@linkerist-vay-nava:~$ sudo apt-cache madison libdpkg-perl
+libdpkg-perl | 1.16.1.2ubuntu7.8 | http://fr.archive.ubuntu.com/ubuntu/ precise-updates/main amd64 Packages
+libdpkg-perl | 1.16.1.2ubuntu7.7 | http://security.ubuntu.com/ubuntu/ precise-security/main amd64 Packages
+libdpkg-perl | 1.16.1.2ubuntu7 | http://fr.archive.ubuntu.com/ubuntu/ precise/main amd64 Packages
+linkerist@linkerist-vay-nava:~$
+linkerist@linkerist-vay-nava:~$ sudo apt-get install libdpkg-perl=1.16.1.2ubuntu7.8
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following package was automatically installed and is no longer required:
+  libfile-fcntllock-perl
+Use 'apt-get autoremove' to remove it.
+Suggested packages:
+  debian-keyring
+The following packages will be DOWNGRADED:
+  libdpkg-perl
+0 upgraded, 0 newly installed, 1 downgraded, 0 to remove and 0 not upgraded.
+Need to get 181 kB of archives.
+After this operation, 270 kB disk space will be freed.
+Do you want to continue? [Y/n] y
+Get:1 http://fr.archive.ubuntu.com/ubuntu/ precise-updates/main libdpkg-perl all 1.16.1.2ubuntu7.8 [181 kB]
+Fetched 181 kB in 1s (105 kB/s)        
+dpkg: warning: downgrading libdpkg-perl from 1.17.5ubuntu5.7 to 1.16.1.2ubuntu7.8
+(Reading database ... 166781 files and directories currently installed.)
+Preparing to unpack .../libdpkg-perl_1.16.1.2ubuntu7.8_all.deb ...
+Unpacking libdpkg-perl (1.16.1.2ubuntu7.8) over (1.17.5ubuntu5.7) ...
+Processing triggers for man-db (2.6.7.1-1ubuntu1) ...
+Setting up libdpkg-perl (1.16.1.2ubuntu7.8) ...
+linkerist@linkerist-vay-nava:~$
+linkerist@linkerist-vay-nava:~$
+linkerist@linkerist-vay-nava:~$
+linkerist@linkerist-vay-nava:~$
+linkerist@linkerist-vay-nava:~$
+linkerist@linkerist-vay-nava:~$ sudo apt-get install build-essential 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following package was automatically installed and is no longer required:
+  libfile-fcntllock-perl
+Use 'apt-get autoremove' to remove it.
+The following extra packages will be installed:
+  dpkg-dev fakeroot g++ g++-4.6 libalgorithm-diff-perl libalgorithm-merge-perl
+  libstdc++6-4.6-dev
+Suggested packages:
+  debian-keyring g++-multilib g++-4.6-multilib gcc-4.6-doc libstdc++6-4.6-dbg
+  libstdc++6-4.6-doc
+Recommended packages:
+  libalgorithm-diff-xs-perl
+The following NEW packages will be installed:
+  build-essential dpkg-dev fakeroot g++ g++-4.6 libalgorithm-diff-perl
+  libalgorithm-merge-perl libstdc++6-4.6-dev
+0 upgraded, 8 newly installed, 0 to remove and 0 not upgraded.
+Need to get 9,240 kB of archives.
+After this operation, 27.2 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://fr.archive.ubuntu.com/ubuntu/ precise/main libstdc++6-4.6-dev amd64 4.6.3-1ubuntu5 [1,660 kB]
+Get:2 http://fr.archive.ubuntu.com/ubuntu/ precise/main g++-4.6 amd64 4.6.3-1ubuntu5 [6,954 kB]
+Get:3 http://fr.archive.ubuntu.com/ubuntu/ precise/main g++ amd64 4:4.6.3-1ubuntu5 [1,442 B]
+Get:4 http://fr.archive.ubuntu.com/ubuntu/ precise-updates/main dpkg-dev all 1.16.1.2ubuntu7.8 [468 kB]
+Get:5 http://fr.archive.ubuntu.com/ubuntu/ precise-updates/main build-essential amd64 11.5ubuntu2.1 [5,816 B]
+Get:6 http://fr.archive.ubuntu.com/ubuntu/ precise/main fakeroot amd64 1.18.2-1 [87.2 kB]
+Get:7 http://fr.archive.ubuntu.com/ubuntu/ precise/main libalgorithm-diff-perl all 1.19.02-2 [50.7 kB]
+Get:8 http://fr.archive.ubuntu.com/ubuntu/ precise/main libalgorithm-merge-perl all 0.08-2 [12.7 kB]
+Fetched 9,240 kB in 1min 51s (83.2 kB/s)                                       
+Selecting previously unselected package libstdc++6-4.6-dev.
+(Reading database ... 166768 files and directories currently installed.)
+Preparing to unpack .../libstdc++6-4.6-dev_4.6.3-1ubuntu5_amd64.deb ...
+Unpacking libstdc++6-4.6-dev (4.6.3-1ubuntu5) ...
+Selecting previously unselected package g++-4.6.
+Preparing to unpack .../g++-4.6_4.6.3-1ubuntu5_amd64.deb ...
+Unpacking g++-4.6 (4.6.3-1ubuntu5) ...
+Selecting previously unselected package g++.
+Preparing to unpack .../g++_4%3a4.6.3-1ubuntu5_amd64.deb ...
+Unpacking g++ (4:4.6.3-1ubuntu5) ...
+Selecting previously unselected package dpkg-dev.
+Preparing to unpack .../dpkg-dev_1.16.1.2ubuntu7.8_all.deb ...
+Unpacking dpkg-dev (1.16.1.2ubuntu7.8) ...
+Selecting previously unselected package build-essential.
+Preparing to unpack .../build-essential_11.5ubuntu2.1_amd64.deb ...
+Unpacking build-essential (11.5ubuntu2.1) ...
+Selecting previously unselected package fakeroot.
+Preparing to unpack .../fakeroot_1.18.2-1_amd64.deb ...
+Unpacking fakeroot (1.18.2-1) ...
+Selecting previously unselected package libalgorithm-diff-perl.
+Preparing to unpack .../libalgorithm-diff-perl_1.19.02-2_all.deb ...
+Unpacking libalgorithm-diff-perl (1.19.02-2) ...
+Selecting previously unselected package libalgorithm-merge-perl.
+Preparing to unpack .../libalgorithm-merge-perl_0.08-2_all.deb ...
+Unpacking libalgorithm-merge-perl (0.08-2) ...
+Processing triggers for ccache (3.1.9-1) ...
+Updating symlinks in /usr/lib/ccache ...
+Processing triggers for man-db (2.6.7.1-1ubuntu1) ...
+Setting up dpkg-dev (1.16.1.2ubuntu7.8) ...
+Setting up fakeroot (1.18.2-1) ...
+update-alternatives: using /usr/bin/fakeroot-sysv to provide /usr/bin/fakeroot (fakeroot) in auto mode
+Setting up libalgorithm-diff-perl (1.19.02-2) ...
+Setting up libalgorithm-merge-perl (0.08-2) ...
+Setting up g++-4.6 (4.6.3-1ubuntu5) ...
+Setting up g++ (4:4.6.3-1ubuntu5) ...
+update-alternatives: using /usr/bin/g++ to provide /usr/bin/c++ (c++) in auto mode
+Setting up build-essential (11.5ubuntu2.1) ...
+Setting up libstdc++6-4.6-dev (4.6.3-1ubuntu5) ...
+linkerist@linkerist-vay-nava:~$
+linkerist@linkerist-vay-nava:~$
+linkerist@linkerist-vay-nava:~$
+linkerist@linkerist-vay-nava:~$
+
+================================================
+

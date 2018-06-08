@@ -1,0 +1,32 @@
+
+[root@Linkerist-Lenovo-G500:21:08:01: /mnt/win/app/tree-1.6.0 #] clock
+The program 'clock' is currently not installed. You can install it by typing:
+apt-get install xview-clients
+[root@Linkerist-Lenovo-G500:21:08:08: /mnt/win/app/tree-1.6.0 #] apt-get install xview-clients
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following extra packages will be installed:
+  xviewg
+The following NEW packages will be installed:
+  xview-clients xviewg
+0 upgraded, 2 newly installed, 0 to remove and 320 not upgraded.
+Need to get 849 kB of archives.
+After this operation, 2,159 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://mirrors.aliyun.com/ubuntu/ trusty/universe xviewg amd64 3.2p1.4-28.1 [780 kB]
+Get:2 http://mirrors.aliyun.com/ubuntu/ trusty/universe xview-clients amd64 3.2p1.4-28.1 [68.4 kB]
+Fetched 849 kB in 0s (1,107 kB/s)       
+Selecting previously unselected package xviewg.
+(Reading database ... 239477 files and directories currently installed.)
+Preparing to unpack .../xviewg_3.2p1.4-28.1_amd64.deb ...
+Unpacking xviewg (3.2p1.4-28.1) ...
+Selecting previously unselected package xview-clients.
+Preparing to unpack .../xview-clients_3.2p1.4-28.1_amd64.deb ...
+Unpacking xview-clients (3.2p1.4-28.1) ...
+Processing triggers for man-db (2.6.7.1-1ubuntu1) ...
+Setting up xviewg (3.2p1.4-28.1) ...
+Setting up xview-clients (3.2p1.4-28.1) ...
+Processing triggers for libc-bin (2.19-0ubuntu6.6) ...
+[root@Linkerist-Lenovo-G500:21:08:30: /mnt/win/app/tree-1.6.0 #]
+

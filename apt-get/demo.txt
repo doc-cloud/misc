@@ -1,0 +1,8 @@
+
+# it will install some essential build packages
+
+apt-get install build-essential
+
+#guake not running
+apt-get install mate-notification-daemon
+

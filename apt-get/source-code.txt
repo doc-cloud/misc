@@ -1,0 +1,16 @@
+---------------------------------------------
+
+1.Add a source URL to sources.list
+
+cat /etc/apt/sources.list
+deb-src http://ftp.de.debian.org/debian lenny main
+
+apt-get update
+
+2.Get source code directly
+
+apt-get source netstat
+
+---------------------------------------------
+
+http://packages.debian.org/stable
