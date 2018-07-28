@@ -1,0 +1,16 @@
+Instead of outputting the result of preprocessing, output a rule suitable for make describing the dependencies of the main source file.  The
+preprocessor outputs one make rule containing the object file name for that source file, a colon, and the names of all the included files, including
+those coming from -include or -imacros command line options.
+
+Unless specified explicitly (with -MT or -MQ), the object file name consists of the name of the source file with any suffix replaced with object file
+suffix and with any leading directory parts removed.  If there are many included files then the rule is split into several lines using \-newline.  The
+rule has no commands.
+
+This option does not suppress the preprocessor's debug output, such as -dM.  To avoid mixing such debug output with the dependency rules you should
+explicitly specify the dependency output file with -MF, or use an environment variable like DEPENDENCIES_OUTPUT.  Debug output will still be sent to the
+regular output stream as normal.
+
+Passing -M to the driver implies -E, and suppresses warnings with an implicit -w.
+
+test:
+gcc -M test.c

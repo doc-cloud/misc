@@ -1,0 +1,13 @@
+把必须的数据缓存在接近处理器的地方。减少缓存缺失和停顿，从而提高性能
+
+demo:
+
+Prefetch.h (g:\kernel\linux-2.6.39\include\linux)
+
+#ifndef ARCH_HAS_PREFETCH
+#define prefetch(x) __builtin_prefetch(x)
+#endif
+
+#ifndef ARCH_HAS_PREFETCHW
+#define prefetchw(x) __builtin_prefetch(x,1)
+#endif
