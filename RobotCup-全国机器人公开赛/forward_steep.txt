@@ -1,0 +1,48 @@
+void forward_steep()
+{
+	if(1==j4&&1==j5&&0==j3&&0==j6)
+		DMotor_Control_Par(63,63);					//the most possiblitiy,the ideal situation in other word.
+													//we named this situation S0.
+	
+	else if(1==j4&&0==j3&&0==j5)
+		DMotor_Control_Par(60,65);
+	else if(1==j5&&0==j4&&0==j6)
+		DMotor_Control_Par(65,60);					//the lower possibility compare to S0,process travel after the S0.
+													//we named this situation S1.
+	
+	else if(1==j3&&1==j4)
+		DMotor_Control_Par(55,68);
+	else if(1==j5&&1==j6)
+		DMotor_Control_Par(68,55);					//the lower possibility compare to S1,process travel after the S1.
+													//we named this situation S2.
+	
+	else if(1==j3&&0==j2&&0==j4)
+		DMotor_Control_Par(50,70);
+	else if(1==j6&&0==j5&&0==j7)
+		DMotor_Control_Par(70,50);					//the lower possibility compare to S2,process travel after the S2.
+													//we named this situation S3.
+	
+	else if(1==j2&&1==j3)
+		DMotor_Control_Par(44,73);
+	else if(1==j6&&1==j7)
+		DMotor_Control_Par(73,44);					//the lower possibility compare to S3,process travel after the S3.
+													//we named this situation S4.
+	
+	else if(1==j3&&1==j4&&1==j5)
+		DMotor_Control_Par(42,75);
+	else if(1==j4&&1==j5&&1==j6)
+		DMotor_Control_Par(75,42);					//the lower possibility compare to S4,process travel after the S4.
+													//we named this situation S5.
+	
+	else if(1==j2&&1==j3&&1==j4)								
+		DMotor_Control_Par(40,77);
+	else if(1==j5&&1==j6&&1==j7)
+		DMotor_Control_Par(77,40);					//the lower possibility compare to S5,process travel after the S5.
+													//we named this situation S6.
+	
+	else if(1==j1&&1==j2)								
+		DMotor_Control_Par(41,79);
+	else if(1==j7&&1==j8)
+		DMotor_Control_Par(79,41);					//the lower possibility compare to S6,process travel after the S6.
+													//we named this situation S7.
+}

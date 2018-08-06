@@ -1,0 +1,114 @@
+//void turn_degree()
+//{	
+//	unsigned int i;
+//	
+//	//offer a pulse width for the negative radian.
+//	if(-180==radian)							
+//	{											//due to the lack of the robot.
+//		DMotor_Control_Par(-30,30);
+//		for(i=243;i>0;i--)						//we choose the method of delay here to rotate a specific degree.
+//			delay_ms(10);
+//		if(1==j2&&1==j3)
+//			delay_ms(20);						
+//		else if(0==j2&&1==j3&&0==j4)
+//			delay_ms(16);
+//		else if(1==j3&&1==j4)
+//			delay_ms(12);
+//		else if(0==j3&&1==j4&&0==j5)
+//			delay_ms(8);
+//		else if(1==j4&&1==j5)
+//			delay_ms(4);
+//		DMotor_Control_Par(0,0);				//several delay plan should be made before the competition.
+//	}
+//	/*
+//	else if(-135==radian)
+//	{
+//		DMotor_Control_Par(-30,30);
+//		for(i=183;i>0;i--)
+//			delay_ms(10);
+//		DMotor_Control_Par(0,0);
+//	}
+//	*/
+//	else if(-90==radian)
+//	{
+//		DMotor_Control_Par(-30,30);
+//		for(i=122;i>0;i--)
+//			delay_ms(10);
+//		if(1==j2&&1==j3)
+//			delay_ms(20);						
+//		else if(0==j2&&1==j3&&0==j4)
+//			delay_ms(16);
+//		else if(1==j3&&1==j4)
+//			delay_ms(12);
+//		else if(0==j3&&1==j4&&0==j5)
+//			delay_ms(8);
+//		else if(1==j4&&1==j5)
+//			delay_ms(4);
+//		DMotor_Control_Par(0,0);
+//	}
+//	/*
+//	else if(-45==radian)
+//	{
+//		DMotor_Control_Par(-30,30);
+//		for(i=65;i>0;i--)
+//			delay_ms(10);
+//		delay_ms(5);
+//		DMotor_Control_Par(0,0);
+//	}
+//	*/
+//	
+//	//offer a pulse width for the positive radian.
+//	/*
+//	else if(45==radian)
+//	{
+//		DMotor_Control_Par(30,-30);
+//		for(i=64;i>0;i--)
+//			delay_ms(10);
+//		DMotor_Control_Par(0,0);
+//	}
+//	*/
+//	else if(90==radian)
+//	{
+//		DMotor_Control_Par(30,-30);
+//		for(i=120;i>0;i--)
+//			delay_ms(10);
+//		if(1==j7&&1==j6)
+//			delay_ms(20);						
+//		else if(0==j7&&1==j6&&0==j5)
+//			delay_ms(16);
+//		else if(1==j6&&1==j5)
+//			delay_ms(12);
+//		else if(0==j6&&1==j5&&0==j4)
+//			delay_ms(8);
+//		else if(1==j5&&1==j4)
+//			delay_ms(4);
+//		DMotor_Control_Par(0,0);
+//	}
+//	/*
+//	else if(135==radian)
+//	{
+//		DMotor_Control_Par(30,-30);
+//		for(i=183;i>0;i--)
+//			delay_ms(10);
+//		delay_ms(3);
+//		DMotor_Control_Par(0,0);
+//	}
+//	*/
+//	else if(180==radian)
+//	{
+//		DMotor_Control_Par(30,-30);
+//		for(i=243;i>0;i--)
+//			delay_ms(10);
+//		if(1==j7&&1==j6)
+//			delay_ms(20);						
+//		else if(0==j7&&1==j6&&0==j5)
+//			delay_ms(16);
+//		else if(1==j6&&1==j5)
+//			delay_ms(12);
+//		else if(0==j6&&1==j5&&0==j4)
+//			delay_ms(8);
+//		else if(1==j5&&1==j4)
+//			delay_ms(4);
+//		DMotor_Control_Par(0,0);
+//	}
+//}

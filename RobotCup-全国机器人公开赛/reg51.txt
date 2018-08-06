@@ -1,0 +1,92 @@
+#include <reg51.h>
+#include <intrins.h>
+
+sbit lcdrs=P3^5;
+sbit lcdwr=P2^1;
+sbit lcden=P2^2;
+sbit adwr=P3^6;
+sbit adrd=P3^7;
+sbit dula=P2^6;
+sbit wela=P2^7;
+
+void delayms(unsigned char z);
+void display(unsigned char advalue);
+void write_dat(unsigned char dat);
+void write_cmd(unsigned char cmd);
+void init_1602();
+
+
+void main()
+{
+	unsigned char advalue;
+	adwr=1;
+	_nop_();
+	adwr=0;
+	_nop_();
+	adwr=1;
+	delayms(2);
+	adrd=1;
+	_nop_();
+	adrd=0;
+	_nop_();
+	advalue=P1;
+	iii=advalue/100;
+	ii=advalue%100/10;
+	i=advalue%10;
+	//num=advalue;
+	display(iii,ii,i);
+}
+											
+void delayms(unsigned char z)
+{
+	unsigned char x,y;
+	for(x=z;x>0;x--)
+		for(y=110;y>0;y--)
+			;
+}
+
+void init_1602()
+{
+	dula=0;
+	wela=0;
+	lcden=0;
+	write_cmd(0x38);
+	write_cmd(0x0c);
+	write_cmd(0x06);
+	write_cmd(0x01);
+}
+
+void write_cmd(unsigned char cmd)
+{
+	//lcdrw=0;
+	lcdrs=0;
+	P0=cmd;
+	delayms(5);
+	lcden=1;
+	delayms(5);
+	lcden=0;
+}
+
+void write_dat(unsigned char dat)
+{
+	//lcdrw=0;
+	lcdrs=1;
+	P0=dat;
+	delayms(5);
+	lcden=1;
+	delayms(5);
+	lcden=0;
+}
+
+void display(unsigned char iii,unsigned char ii,unsigned char i)
+{
+	init_1602();
+	write_cmd(0x80);
+	write_dat(iii);
+	write_cmd(0x80+1);
+	write_dat(ii);
+	write_cmd(0x80+2);
+	write_dat(i);
+	while(1)
+		;
+}

@@ -1,0 +1,66 @@
+unsigned char is_center()
+{
+	/*
+	u8 temp0=0,temp1=0;
+	if(!(((j1&&(j8||j7))||(j2&&(j8||j7)))&&!(j3||j4||j5||j6)))
+		return 0;
+	else 
+	{
+		temp0=1;
+	delay_ms(500);
+		if(((j1&&(j8||j7))||(j2&&(j8||j7)))&&!(j3||j4||j5||j6))
+		{
+			temp1=1;
+			return (temp0&&temp1);
+		}
+		else
+			return 0;
+	}
+	*/
+	//unsigned int i;
+	unsigned char flag0,flag1;
+	//i=1000;
+	flag0=0;
+	//flag1=0;
+	//if(j1&&j8&&!(j2&&j7))
+		//tmp=1;
+	//if(j1&&j8&&j2&&j7&&!(j3&&j6))
+		//flag0=1;
+	//if(!(j1&&j8)&&j2&&j7&&!(j3&&j6))
+		//flag0=1;
+	if(1==j1&&0==j2&&0==j3&&0==j6&&1==j7&&1==j8)
+		flag0=1;
+	if(1==j1&&1==j2&&0==j3&&0==j6&&0==j7&&1==j8)
+		flag0=1;
+	if(1==j1&&1==j2&&0==j3&&0==j6&&1==j7&&1==j8)
+		flag0=1;
+	if(0==flag0)
+		return 0;
+	else
+	{
+		while(!(j1&&j2&&j3&&j4&&j5&&j6&&j7&&j8))
+			forward_moderate();
+		while(j1&&j2&&j4&&j5&&j6&&j7&&j8)
+				forward_moderate();
+		//while(i--)
+			//;
+		/*
+		if(0==j1&&1==j2&&1==j6&&0==j7&&0==j8)
+			flag1=1;
+		if(0==j1&&0==j2&&1==j3&&1==j7&&0==j8)
+			flag1=1;
+		if(0==j1&&0==j2&&0==j3&&1==j4&&0==j7&&0==j8)
+			flag1=1;
+		if(0==j1&&0==j2)
+			flag1=1;
+		if(0==j1&&0==j2&&0==j3)
+			flag1=1;
+		if(0==j3&&0==j7&&0==j8)
+			flag1=1;
+		if(0==j1&&0==j8&&(j3||j7))
+			flag1=1;
+		*/
+		return 1;
+	}
+	//return flag0&&flag1;
+}
