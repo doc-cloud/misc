@@ -1,0 +1,19 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\lx\Desktop\NO.2_Car_release_2.0\USER\TEST.uvproj
+Project File Date:  08/26/2014
+
+<h2>Output:</h2>
+Build target '小车程序方案二'
+linking...
+Program Size: Code=32778 RO-data=358 RW-data=604 ZI-data=2276  
+FromELF: creating hex file...
+".\TEST.axf" - 0 Errors, 0 Warning(s).
+Build target '小车程序方案二'
+linking...
+Program Size: Code=32778 RO-data=358 RW-data=604 ZI-data=2276  
+FromELF: creating hex file...
+".\TEST.axf" - 0 Errors, 0 Warning(s).
