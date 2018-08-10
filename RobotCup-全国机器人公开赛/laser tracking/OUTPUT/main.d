@@ -1,0 +1,34 @@
+..\OUTPUT\main.o: main.c
+..\OUTPUT\main.o: SuperSharkV1.0.h
+..\OUTPUT\main.o: ..\track\track_jg.h
+..\OUTPUT\main.o: ..\USER\SuperSharkV1.0.h
+..\OUTPUT\main.o: ..\LIB\inc\stm32f10x_lib.h
+..\OUTPUT\main.o: ..\LIB\inc\stm32f10x_map.h
+..\OUTPUT\main.o: F:\keil 4.10\ARM\INC\ST\STM32F10x\stm32f10x_conf.h
+..\OUTPUT\main.o: F:\keil 4.10\ARM\INC\ST\STM32F10x\stm32f10x_type.h
+..\OUTPUT\main.o: ..\LIB\inc\stm32f10x_type.h
+..\OUTPUT\main.o: ..\LIB\inc\cortexm3_macro.h
+..\OUTPUT\main.o: ..\LIB\inc\stm32f10x_adc.h
+..\OUTPUT\main.o: ..\LIB\inc\stm32f10x_bkp.h
+..\OUTPUT\main.o: ..\LIB\inc\stm32f10x_can.h
+..\OUTPUT\main.o: ..\LIB\inc\stm32f10x_crc.h
+..\OUTPUT\main.o: ..\LIB\inc\stm32f10x_dac.h
+..\OUTPUT\main.o: ..\LIB\inc\stm32f10x_dbgmcu.h
+..\OUTPUT\main.o: ..\LIB\inc\stm32f10x_dma.h
+..\OUTPUT\main.o: ..\LIB\inc\stm32f10x_exti.h
+..\OUTPUT\main.o: ..\LIB\inc\stm32f10x_flash.h
+..\OUTPUT\main.o: ..\LIB\inc\stm32f10x_fsmc.h
+..\OUTPUT\main.o: ..\LIB\inc\stm32f10x_gpio.h
+..\OUTPUT\main.o: ..\LIB\inc\stm32f10x_i2c.h
+..\OUTPUT\main.o: ..\LIB\inc\stm32f10x_iwdg.h
+..\OUTPUT\main.o: ..\LIB\inc\stm32f10x_nvic.h
+..\OUTPUT\main.o: ..\LIB\inc\stm32f10x_pwr.h
+..\OUTPUT\main.o: ..\LIB\inc\stm32f10x_rcc.h
+..\OUTPUT\main.o: ..\LIB\inc\stm32f10x_rtc.h
+..\OUTPUT\main.o: ..\LIB\inc\stm32f10x_sdio.h
+..\OUTPUT\main.o: ..\LIB\inc\stm32f10x_spi.h
+..\OUTPUT\main.o: ..\LIB\inc\stm32f10x_systick.h
+..\OUTPUT\main.o: ..\LIB\inc\stm32f10x_tim.h
+..\OUTPUT\main.o: ..\LIB\inc\stm32f10x_usart.h
+..\OUTPUT\main.o: ..\LIB\inc\stm32f10x_wwdg.h
+..\OUTPUT\main.o: ..\arithmetic\arithmetic.h
