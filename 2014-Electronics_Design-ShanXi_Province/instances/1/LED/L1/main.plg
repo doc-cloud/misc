@@ -1,0 +1,56 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: main - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\a01\LOCALS~1\Temp\RSP43A.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/main.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\msp430\03例程代码\LT-1B Programs(Rev. E)\1\LED\L1\main.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\a01\LOCALS~1\Temp\RSP43A.tmp" 
+Creating temporary file "C:\DOCUME~1\a01\LOCALS~1\Temp\RSP43B.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/main.pdb" /debug /machine:I386 /out:"Debug/main.exe" /pdbtype:sept 
+".\Debug\main.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\a01\LOCALS~1\Temp\RSP43B.tmp"
+<h3>Output Window</h3>
+Compiling...
+main.c
+e:\msp430\03例程代码\lt-1b programs(rev. e)\1\led\l1\boardconfig.h(19) : error C2065: 'P3DIR' : undeclared identifier
+e:\msp430\03例程代码\lt-1b programs(rev. e)\1\led\l1\boardconfig.h(19) : error C2065: 'BIT3' : undeclared identifier
+e:\msp430\03例程代码\lt-1b programs(rev. e)\1\led\l1\boardconfig.h(19) : error C2065: 'BIT6' : undeclared identifier
+e:\msp430\03例程代码\lt-1b programs(rev. e)\1\led\l1\boardconfig.h(19) : error C2065: 'BIT7' : undeclared identifier
+e:\msp430\03例程代码\lt-1b programs(rev. e)\1\led\l1\boardconfig.h(20) : error C2065: 'P3OUT' : undeclared identifier
+e:\msp430\03例程代码\lt-1b programs(rev. e)\1\led\l1\boardconfig.h(31) : warning C4013: '_NOP' undefined; assuming extern returning int
+e:\msp430\03例程代码\lt-1b programs(rev. e)\1\led\l1\main.c(12) : error C2065: 'WDTCTL' : undeclared identifier
+e:\msp430\03例程代码\lt-1b programs(rev. e)\1\led\l1\main.c(12) : error C2065: 'WDTPW' : undeclared identifier
+e:\msp430\03例程代码\lt-1b programs(rev. e)\1\led\l1\main.c(12) : error C2065: 'WDTHOLD' : undeclared identifier
+e:\msp430\03例程代码\lt-1b programs(rev. e)\1\led\l1\main.c(15) : error C2065: 'CCTL0' : undeclared identifier
+e:\msp430\03例程代码\lt-1b programs(rev. e)\1\led\l1\main.c(15) : error C2065: 'CCIE' : undeclared identifier
+e:\msp430\03例程代码\lt-1b programs(rev. e)\1\led\l1\main.c(16) : error C2065: 'CCR0' : undeclared identifier
+e:\msp430\03例程代码\lt-1b programs(rev. e)\1\led\l1\main.c(17) : error C2065: 'TACTL' : undeclared identifier
+e:\msp430\03例程代码\lt-1b programs(rev. e)\1\led\l1\main.c(17) : error C2065: 'TASSEL_1' : undeclared identifier
+e:\msp430\03例程代码\lt-1b programs(rev. e)\1\led\l1\main.c(17) : error C2065: 'ID_3' : undeclared identifier
+e:\msp430\03例程代码\lt-1b programs(rev. e)\1\led\l1\main.c(17) : error C2065: 'MC_1' : undeclared identifier
+e:\msp430\03例程代码\lt-1b programs(rev. e)\1\led\l1\main.c(18) : error C2065: 'P2DIR' : undeclared identifier
+e:\msp430\03例程代码\lt-1b programs(rev. e)\1\led\l1\main.c(19) : error C2065: 'P2OUT' : undeclared identifier
+e:\msp430\03例程代码\lt-1b programs(rev. e)\1\led\l1\main.c(21) : warning C4013: '_EINT' undefined; assuming extern returning int
+e:\msp430\03例程代码\lt-1b programs(rev. e)\1\led\l1\main.c(22) : error C2065: 'LPM3' : undeclared identifier
+e:\msp430\03例程代码\lt-1b programs(rev. e)\1\led\l1\main.c(31) : warning C4068: unknown pragma
+e:\msp430\03例程代码\lt-1b programs(rev. e)\1\led\l1\main.c(32) : error C2054: expected '(' to follow '__interrupt'
+e:\msp430\03例程代码\lt-1b programs(rev. e)\1\led\l1\main.c(33) : error C2085: 'Timer_A' : not in formal parameter list
+e:\msp430\03例程代码\lt-1b programs(rev. e)\1\led\l1\main.c(33) : error C2143: syntax error : missing ';' before '{'
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+main.exe - 21 error(s), 3 warning(s)
+</pre>
+</body>
+</html>

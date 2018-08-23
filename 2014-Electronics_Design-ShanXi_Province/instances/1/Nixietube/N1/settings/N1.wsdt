@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+  <CurrentConfigs><Project>N1/Debug</Project></CurrentConfigs></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>118</Column0><Column1>22</Column1><Column2>20</Column2><Column3>1242340</Column3></ColumnWidths>
+      </Workspace>
+      <Build>
+        
+        
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>723</ColumnWidth1><ColumnWidth2>193</ColumnWidth2><ColumnWidth3>48</ColumnWidth3></Build>
+      <TerminalIO/>
+      <Profiling/>
+    <Debug-Log/></Static>
+    <Windows>
+      
+      
+    <Wnd2>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-16503-32704</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>N1</ExpandedNode><ExpandedNode>N1/EEPROM.c</ExpandedNode><ExpandedNode>N1/IIC.c</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd2><Wnd3>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-32250-50</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+        <Tab><Identity>TabID-3278-8116</Identity><TabName>Debug Log</TabName><Factory>Debug-Log</Factory><Session/></Tab></Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd3></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>E:\msp430\03&#x4F8B;&#x7A0B;&#x4ee3;&#x7801;\LT-1B Programs(Rev. E)\1\Nixietube\N1\IIC.c</Filename><XPos>0</XPos><YPos>205</YPos><SelStart>3626</SelStart><SelEnd>3626</SelEnd></Tab><ActiveTab>0</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>E:\msp430\03&#x4F8B;&#x7A0B;&#x4ee3;&#x7801;\LT-1B Programs(Rev. E)\1\Nixietube\N1\IIC.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>E:\msp430\03&#x4F8B;&#x7A0B;&#x4ee3;&#x7801;\LT-1B Programs(Rev. E)\1\Nixietube\N1\main.c</Filename><XPos>0</XPos><YPos>27</YPos><SelStart>691</SelStart><SelEnd>691</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>E:\msp430\03&#x4F8B;&#x7A0B;&#x4ee3;&#x7801;\LT-1B Programs(Rev. E)\1\Nixietube\N1\EEPROM.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>378</SelStart><SelEnd>378</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>E:\msp430\03&#x4F8B;&#x7A0B;&#x4ee3;&#x7801;\LT-1B Programs(Rev. E)\1\Nixietube\N1\EEPROM.c</Filename><XPos>0</XPos><YPos>129</YPos><SelStart>2886</SelStart><SelEnd>2886</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-003be910><key>iaridepm1</key></Toolbar-003be910></Sizes></Row0></Top><Left><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>514</Bottom><Right>180</Right><x>-2</x><y>-2</y><xscreen>0</xscreen><yscreen>0</yscreen><sizeHorzCX>0</sizeHorzCX><sizeHorzCY>0</sizeHorzCY><sizeVertCX>177734</sizeVertCX><sizeVertCY>745665</sizeVertCY></Rect></Wnd2></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd3><Rect><Top>-2</Top><Left>-2</Left><Bottom>133</Bottom><Right>1026</Right><x>-2</x><y>-2</y><xscreen>1028</xscreen><yscreen>135</yscreen><sizeHorzCX>1003906</sizeHorzCX><sizeHorzCY>195087</sizeHorzCY><sizeVertCX>0</sizeVertCX><sizeVertCY>0</sizeVertCY></Rect></Wnd3></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+

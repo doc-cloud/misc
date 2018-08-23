@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\SMG1602.h</file>
+      <file>$PROJ_DIR$\KeyScan.h</file>
+      <file>$PROJ_DIR$\SmallProcess.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\InputChar.pbi</file>
+      <file>$PROJ_DIR$\CapProcess.c</file>
+      <file>$PROJ_DIR$\InputChar.h</file>
+      <file>$PROJ_DIR$\SmallProcess.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\SMG1602.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\CapProcess.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\in430.h</file>
+      <file>$TOOLKIT_DIR$\inc\msp430x14x.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\Introduce.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\KeyScan.pbi</file>
+      <file>$PROJ_DIR$\KeyScan.c</file>
+      <file>$TOOLKIT_DIR$\inc\msp430.h</file>
+      <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
+      <file>$PROJ_DIR$\Introduce.h</file>
+      <file>$PROJ_DIR$\CapProcess.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\InputChar.r43</file>
+      <file>$TOOLKIT_DIR$\config\multiplier.xcl</file>
+      <file>$PROJ_DIR$\InputNumber.c</file>
+      <file>$PROJ_DIR$\Debug\Exe\KB4.d43</file>
+      <file>$PROJ_DIR$\InputNumber.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\KeyProcess.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\SmallProcess.pbi</file>
+      <file>$PROJ_DIR$\KeyProcess.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\SmallProcess.r43</file>
+      <file>$TOOLKIT_DIR$\config\lnk430F149.xcl</file>
+      <file>$PROJ_DIR$\BoardConfig.h</file>
+      <file>$PROJ_DIR$\InputChar.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\InputNumber.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\KeyScan.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\KB4.pbd</file>
+      <file>$PROJ_DIR$\includes.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\KeyProcess.pbi</file>
+      <file>$PROJ_DIR$\Introduce.c</file>
+      <file>$TOOLKIT_DIR$\lib\clib\cl430f.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\Introduce.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\CapProcess.r43</file>
+      <file>$PROJ_DIR$\SMG1602.c</file>
+      <file>$PROJ_DIR$\main.c</file>
+      <file>$PROJ_DIR$\KeyProcess.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\InputNumber.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\SMG1602.pbi</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\CapProcess.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 40</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 9</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\SmallProcess.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 28</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 26</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 23</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\KeyScan.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 33</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 13</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 15 11 10 16</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 15</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\InputNumber.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 32</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 44</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\KB4.d43</name>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 29 21 40 20 32 12 25 33 8 28 7 38</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\KeyProcess.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 25</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 36</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 24 5 0</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 24 5 0</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\InputChar.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 20</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 3</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 18 2</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 18 2</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Obj\KB4.pbd</name>
+      <inputs>
+        <tool>
+          <name>BILINK</name>
+          <file> 9 3 44 39 36 13 45 26 19</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Introduce.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 12</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 39</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 0 15 11 10 16</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 0 15</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\SMG1602.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 8</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 45</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 11 10 16 0</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 11 10 16 0</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\main.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 7</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 19</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 35 0 1 43 17 15 11 10 16 30</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 35 0 1 43 17 15 30</file>
+        </tool>
+      </inputs>
+    </file>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>XLINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+
